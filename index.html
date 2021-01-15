@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-  <title>SMP Challenge</title>
+  <title>Multi-Modal Pre-Training Workshop</title>
   <meta http-equiv="Content-type" content="text/html;charset=UTF-8" />
   <link rel="stylesheet" href="/static/css/bootstrap.css">
   <link rel="stylesheet" type="text/css" href="/static/css/prettify.css">
@@ -12,6 +12,9 @@
   <script src="/static/js/run_prettify.js"></script>
   <script src="/static/js/md5.js"></script>
   <style type="text/css">
+    body { 
+      scroll-behavior: smooth;
+    }
     #nav-first {
       border-radius: 0px;
       margin-bottom: 0px;
@@ -51,12 +54,11 @@
 
     #jumbotron {
       height: 600px;
-      background-image: url(/static/img/front.jpeg);
+      background-image: url(/static/img/background.jpg);
       background-size: cover;
-      margin-top: 130px;
       margin-bottom: 0px;
-      background-position: 80% 75%;
       padding: 0;
+      margin-top: -20px;
     }
 
     #block1 {
@@ -235,90 +237,54 @@
     #forget {
       cursor: pointer;
     }
+
+    .name {
+      height: 38px;
+    }
+
+    .organization {
+      height: 40px;
+    }
   </style>
 </head>
 
 <body>
 
-  <nav class="navbar navbar-inverse navbar-fixed-top" id="nav-second">
-    <div class="container">
-      <ul class="nav navbar-nav" id="nav-second-main">
-        <li class="nav-li active"><a class="nav-second-li" href="#" id="href-home"><b>Home</b></a></li>
-        <li class="nav-li"><a class="nav-second-li" href="/dataset" id="href-description"><b>Dataset</b></a></li>
-        <li class="nav-li"><a class="nav-second-li" href="/download" id="href-dataset"><b>Download</b></a></li>
-        <li class="nav-li"><a class="nav-second-li" href="/challenge" id="href-challenge"><b>Challenge</b></a></li>
-        <!--li class="nav-li dropdown">
-          <a class="nav-second-li dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" id="href-leaderboard"><b>Leaderboard</b> <span class="caret"></a>
-          <ul class="dropdown-menu">
-            <li class="dropdown-li"><a href="https://evalai.cloudcv.org/web/challenges/challenge-page/543/leaderboard">SMP 2020</a></li>
-            <li class="dropdown-li"><a href="/leaderboard">SMP 2019</a></li>
-          </ul>
-        </li-->
-        <li class="nav-li"><a class="nav-second-li" href="/leaderboard" id="href-leaderboard"><b>Leaderboard</b></a></li>
-      </ul>
-    </div>
-  </nav>
-
-  <nav class="navbar navbar-default navbar-fixed-top" id="nav-first">
-    <div class="container">
-      <div class="navbar-header">
-        <img src="/static/img/logo.png" width="400px" id="logo">
-      </div>
-
-      <ul class="nav navbar-nav navbar-right" id="nav-first-main">
-        <li class="nav-li"><a href="https://evalai.cloudcv.org/web/challenges/challenge-page/543/overview" id="href-register"><span class="glyphicon glyphicon-pencil" aria-hidden="true"></span> Register</a></li>
-        <li class="nav-li"><a href="mailto:social.media.prediction@gmail.com" id="href-contact"><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> Contact</a></li>
-      </ul>
-    </div>
-  </nav>
 
   <div class="jumbotron" id="jumbotron">
     <div class="mengban">
       <center>
-        <h1 id="morning"><span class="orange">S</span><span class="white">ocial</span> <span class="orange">M</span><span class="white">edia</span> <span class="orange">P</span><span class="white">rediction</span> <span class="white">Challenge</span>
+	      <h1 id="morning">
+		      <span class="orange">M</span><span class="white">ulti-</span><span class="orange">M</span><span class="white">odal </span><span class="orange">P</span><span class="white">re-</span><span class="orange">T</span><span class="white">raining for Multimedia Understanding</span>
         </h1>
       </center>
       <center>
-        <h2 class="white">ACM Multimedia Conference</h2>
+        <h2 class="white">ACM International Conference on Multimedia Retrieval (ICMR) Workshop</h2>
       </center>
       <center>
-        <h3 class="white">12 - 16 October <b class="orange">2020</b>, Seattle, United States</h3>
+        <h3 class="white">12 - 15 July <b class="orange">2021</b>, Taipei, Taiwan</h3>
       </center>
     </div>
   </div>
 
-  <div class="container-fluid" id="maintext">
-
-    <div class="row" id="block1">
-      <div class="container">
-        <div class="col-xs-10 col-xs-offset-1">
-          <h2 class="p-title"><b>News</b></h2>
-          <ul>
-            <li class="timeline-li red"><b>[2020-06-20]</b>:Congratulations! The leaderboard of SMP Challenge 2020 is available now. To Top-6 teams: please prepare to submit codes to <a>social.media.prediction@gmail.com</a> for final checking before June 23; the paper submission due is July 13.</li>
-          </ul>
-          <ul>
-            <li class="timeline-li"><b>[2020-05-15]</b>:The test dataset is available now, and you can evaluate your model <a href="https://evalai.cloudcv.org/web/challenges/challenge-page/543/submission">here</a>.</li>
-          </ul>
-          <ul>
-            <li class="timeline-li"><b>[2020-05-05]</b>: Please check the new deadlines (caused by COVID-19) in the following Important Dates.</li>
-          </ul>
-          <ul>
-            <li class="timeline-li"><b>[2020-04-01]</b>: <a href="https://evalai.cloudcv.org/web/challenges/challenge-page/543/overview">Evaluation Server</a> has been released.</li>
-          </ul>
-          <ul>
-            <li class="timeline-li"><b>[2020-02-24]</b>: We are hosting Social Media Prediction Challenge 2020.</li>
-          </ul>
-          <br>
-        </div>
-      </div>
+  <nav class="navbar navbar-inverse">
+    <div class="container">
+      <ul class="nav navbar-nav">
+        <li class="nav-li"><a class="nav-second-li" href="#block1"><b>Introduction</b></a></li>
+        <li class="nav-li"><a class="nav-second-li" href="#block2"><b>Submission</b></a></li>
+        <li class="nav-li"><a class="nav-second-li" href="#block4"><b>Program</b></a></li>
+        <li class="nav-li"><a class="nav-second-li" href="#block5"><b>Organizers</b></a></li>
+      </ul>
     </div>
+  </nav>
 
-    <div class="row" id="block2">
+
+    <div class="row" id="block1" name="introduction">
       <div class="container">
-        <div class="col-xs-10 col-xs-offset-1">
-          <h2 class="p-title"><b>Overview</b></h2>
+        <div class="col-xs-12">
+          <h2 class="p-title"><b>Introduction</b></h2>
           <p class="p-body">
-            Continuing the series of <b class="orange">Social Media Prediction (SMP) Challenges</b>, the 2020 edition is seeking excellent research teams to provide new ways of forecasting problems and meaningfully improve people’s social lives and business scenarios. <b class="orange">Temporal Popularity Prediction</b> is a massive-scale, multimodal and time-series forecasting problem that is central to various scenarios, such as online advertising, social recommendation, demand forecasting, etc. We released a large-scale Social Media Prediction Dataset (SMPD) with over 486K posts, 70K users and rich information including user profiles, images, texts, times, locations, and categories. This year the challenge will be again hosted by the joint team from multiple research organizations.
+            Representation learning has always been a key challenge in many tasks of multi-modality domain, such as image-text retrieval, visual question and answering, video localization, speech recognition, ect. Along the history of multi-modality learning, we find that model initialization is one of the most important factors. For example, research of weight initialization set a foundation of neural network based methods and image features pre-trained with Visual Genome Dataset build a new standard setting for many vision-language models. Recently, multi-modal pre-training is a new paradigm of model initialization that establishes the state-of-the-art performances for many multimedia tasks. Pretraining models outperforms traditional methods by providing stronger representation of different modalities learned in an unsupervised training way. Multi-modal pre-training is an interesting topic and has attracted rapidly growing interests in many fields and the intersection of these them, including computing vision, natural language processing, speech recognition, etc. With the continuous effort of many works, we also find that the cost time can be even decreased to 10 hours on 2 Titan RTXs for a vision-language pre-training model in very recent works. Although the emerging trend of multi-modal pre-training models, it remains unexplored in many aspects. For example, studies of standard settings for fair comparison of different multi-modal pre-training models will benefit the research community. More discussion about the efficiency of sub-modules and pre-training tasks will also help us to have more thorough knowledge about pre-training mechanism. Exploration of improving training efficiency is also worth tackling.
           </p>
           <br>
         </div>
@@ -326,38 +292,70 @@
     </div>
 
 
+
+    <div class="row" id="block2" name="submission">
+      <div class="container">
+        <div class="col-xs-12">
+          <h2 class="p-title"><b>Call For Paper</b></h2>
+          <p class="p-body">
+            The goals of this workshop are to (1) investigate research opportunities of multi-modal model initialization, especially on multi-modal pre-training, (2) solicit novel methodologies of multi-modal pre-training, (3) explore and discuss the advantage and possibilities of pre-training for more multimedia tasks. We expect contributions concerning multimodality model initialization and multi-modal pre-training, involving image, language, video, speech, etc.
+	  </p>
+	  <p class="p-body">
+	    The topics of interest include (but not limited to):
+	    <ul>
+              <li>Multi-modal self-supervised learning</li>
+              <li>Multi-modal pre-training task</li>
+              <li>Multi-modal pre-training optimization</li>
+              <li>Multi-modal representation learning</li>
+              <li>Multi-modal model optimization</li>
+              <li>Multi-modal model initialization</li>
+              <li>Cross-modality retrieval</li>
+              <li>Lightweight multi-modal pre-training</li>
+              <li>Multi-modality alignment and parsing</li>
+              <li>Advanced multi-modal applications</li>
+              <li>Benchmark datasets and novel evaluation methods</li>
+            </ul>
+          </p>
+          <br>
+        </div>
+      </div>
+    </div>
 
     <div class="row" id="block3">
       <div class="container">
-        <div class="col-xs-10 col-xs-offset-1">
-          <h2 class="p-title"><b>Dataset Statistics</b></h2>
-          <p class="p-body">The <b class="orange">SMPD (Social Media Prediction Dataset)</b> contains 486K social multimedia posts from 70K users and various social media information including anonymized photo-sharing records, user profile, web image, text, time, location, category, etc. SMPD is a multi-faced, large-scale, temporal web data collection, which collected from Flickr (one of the largest photo-sharing platforms). For the time-series forecasting task, we split training/testing data into chronological sets (commonly, by date and time). The tables below show the statistics of the dataset.
-          </p>
-          <table class="table table-bordered table-striped">
-            <tr>
-              <th>Dataset</th>
-              <th>#Post</th>
-              <th>#User</th>
-              <th>#Categories</th>
-              <th>Temporal Range (Months)</th>
-              <th>Avg. Title Length</th>
-              <th>#Customize Tags</th>
-            </tr>
-            <tr>
-              <td>SMPD2019</td>
-              <td>486k</td>
-              <td>70k</td>
-              <td>756</td>
-              <td>16</td>
-              <td>29</td>
-              <td>250k</td>
-            </tr>
+        <div class="col-xs-12">
+          <h2 class="p-title"><b>Important Dates</b></h2>
+          <!--p class="p-body-small">As you know, MM’20 has extended some deadlines to accommodate the impact caused by COVID-19. We confirmed with general chairs accordingly. As grand challenge papers will be included in the main proceedings, we need to follow the camera-ready deadline for full papers, which is updated to 8/10/2020 (<a href="https://2020.acmmm.org/call-for-paper.html">https://2020.acmmm.org/call-for-paper.html</a>). Please check the new deadlines as follows.
+          </p-->
+          <div class="timeline">
+            <ul>
+              <li><b></b><span>April 20, 2021</span>
+                <p>Deadline for Workshop Paper Submission.</p>
+              </li>
+              <li><b></b><span>May 20, 2021</span>
+                <p>Acceptance Notification of Workshop Papers.</p>
+              </li>
 
-          </table>
+            </ul>
+          </div>
           <br>
         </div>
       </div>
     </div>
+
+
+    <div class="row" id="block4" name="program">
+      <div class="container">
+        <div class="col-xs-12">
+          <h2 class="p-title"><b>Program</b></h2>
+          <p class="p-body">
+	    To be announced.
+	  </p>
+          <br>
+        </div>
+      </div>
+    </div>
+
 
     <!--div class="row" id="block4">
       <div class="container">
@@ -370,131 +368,22 @@
       </div>
     </div-->
 
-    <div class="row" id="block4">
-      <div class="container">
-        <div class="col-xs-10 col-xs-offset-1">
-          <h2 class="p-title"><b>Important Dates</b></h2>
-          <p class="p-body-small">As you know, MM’20 has extended some deadlines to accommodate the impact caused by COVID-19. We confirmed with general chairs accordingly. As grand challenge papers will be included in the main proceedings, we need to follow the camera-ready deadline for full papers, which is updated to 8/10/2020 (<a href="https://2020.acmmm.org/call-for-paper.html">https://2020.acmmm.org/call-for-paper.html</a>). Please check the new deadlines as follows.
-          </p>
-          <div class="timeline">
-            <ul>
-              <li><b></b><span>March 10 - March 15, 2020</span>
-                <p>Dataset available for download (training set)</p>
-              </li>
-              <li><b></b><span>May 15, 2020</span>
-                <p>Test set available for online evaluation</p>
-              </li>
-              <li><b></b><span><s>June 1, 2020</s> June 15, 2020</span>
-                <p>Results submission deadline</p>
-              </li>
-              <li><b></b><span><s>June 1 - June 10, 2020</s> June 15 - June 20, 2020</span>
-                <p>Objective evaluation and human evaluation</p>
-              </li>
-              <li><b style="border: 2px solid rgb(255, 0, 0)"></b><span class="red"><s>June 10, 2020</s> June 20, 2020</span>
-                <p>Evaluation results announce</p>
-              </li>
-              <li><b></b><span><s>June 29, 2020</s> July 13, 2020</span>
-                <p>Paper submission deadline (please follow the instructions on the main
-conference website)</p>
-              </li>
-              <li><b></b><span>July 27, 2020</span>
-                <p>Acceptance notification</p>
-              </li>
-              <li><b></b><span>August 10, 2020</span>
-                <p>Camera-ready submission</p>
-              </li>
 
-            </ul>
-          </div>
-          <br>
-        </div>
-      </div>
-    </div>
-
-    <div class="row" id="block5">
+    <div class="row" id="block5" name="organizers">
       <div class="container">
-        <div class="col-xs-10 col-xs-offset-1">
-          <h2 class="p-title"><b>Citation</b></h2>
-          <p class="p-body">If you intend to publish results that use the information and resources provided by this challenge, please include the following references:</p>
-          <pre class="prettyprint lang-cv">
-@inproceedings{Wu2019SMP,
-  title={SMP Challenge: An Overview of Social Media Prediction Challenge 2019},
-  author={Wu, Bo and Cheng, Wen-Huang and Liu, Peiye and Liu, Bei and Zeng,   Zhaoyang and Luo,
-  Jiebo},
-  booktitle={Proceedings of the 27th ACM International Conference on Multimedia},
-  year={2019}
-}
-@inproceedings{Wu2017DTCN,
-  title={Sequential Prediction of Social Media Popularity with Deep Temporal  Context Networks},
-  author={Wu, Bo and Cheng, Wen-Huang and Zhang, Yongdong and Qiushi, Huang and   Jintao, Li and
-  Mei, Tao},
-  booktitle={International Joint Conference on Artificial Intelligence (IJCAI)},
-  year={2017},
-  location = {Melbourne, Australia}
-}
-@inproceedings{Wu2016TemporalPrediction,
-  author = {Wu, Bo and Mei, Tao and Cheng, Wen-Huang and Zhang, Yongdong},
-  title = {Unfolding Temporal Dynamics: Predicting Social Media Popularity Using  Multi-scale Temporal
-  Decomposition},
-  booktitle = {Proceedings of the Thirtieth AAAI Conference on Artificial   Intelligence (AAAI)}
-  year = {2016},
-  location = {Phoenix, Arizona}
-}
-            </pre>
-          <br>
-        </div>
-      </div>
-    </div>
-
-    <div class="row" id="block6">
-      <div class="container">
-        <div class="col-xs-10 col-xs-offset-1">
-          <h2 class="p-title"><b>Our Teams</b></h2>
+        <div class="col-xs-12">
+          <h2 class="p-title"><b>Organizers</b></h2>
           <br>
           <div class="row">
-            <div class="col-xs-3">
+            <div class="col-xs-2">
               <div class="thumbnail">
-                <img src="/static/img/bowu.jpg" width="100%" class="avatar">
+                <img src="/static/img/Bei_Liu.jpg" width="100%" class="avatar">
                 <div class="caption">
                   <center>
-                    <h4>Bo Wu</h4>
+                    <h4 class="name">Bei Liu</h4>
                   </center>
                   <p>
-                    <center>Columbia University</center><br>
-                  </p>
-                  <p>
-                    <center><a href="mailto:bo.wu@columbia.edu">bo.wu@columbia.edu</a></center>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-xs-3">
-              <div class="thumbnail">
-                <img src="/static/img/wenhuangcheng.jpg" width="100%" class="avatar">
-                <div class="caption">
-                  <center>
-                    <h4>Wen-Huang Cheng</h4>
-                  </center>
-                  <p>
-                    <center>National Chiao Tung University</center>
-                  </p>
-                  <p>
-                    <center><a href="mailto:whcheng@nctu.edu.tw">whcheng@nctu.edu.tw</a></center>
-                  </p>
-                </div>
-              </div>
-            </div>
-
-             <div class="col-xs-3">
-              <div class="thumbnail">
-                <img src="/static/img/beiliu.jpg" width="100%" class="avatar">
-                <div class="caption">
-                  <center>
-                    <h4>Bei Liu</h4>
-                  </center>
-                  <p>
-                    <center>Microsoft Research Asia</center><br>
+                    <center class="organization">Microsoft Research Asia</center><br>
                   </p>
                   <p>
                     <center><a href="mailto:bei.liu@microsoft.com">bei.liu@microsoft.com</a></center>
@@ -503,90 +392,103 @@ conference website)</p>
               </div>
             </div>
 
-            <div class="col-xs-3">
+            <div class="col-xs-2">
               <div class="thumbnail">
-                <img src="/static/img/jieboluo.jpg" width="100%" class="avatar">
+                <img src="/static/img/JianlongFu.jpeg" width="100%" class="avatar">
                 <div class="caption">
                   <center>
-                    <h4>Jiebo Luo</h4>
+                    <h4 class="name">Jianlong Fu</h4>
                   </center>
                   <p>
-                    <center>University of Rochester</center><br>
+                    <center class="organization">Microsoft Research Asia</center><br>
                   </p>
                   <p>
-                    <center><a href="mailto:jluo@cs.rochester.edu">jluo@cs.rochester.edu</a></center>
+                    <center><a href="mailto:jianf@microsoft.com">jianf@microsoft.com</a></center>
                   </p>
                 </div>
               </div>
             </div>
 
-          </div>
-
-          <!--           <h1><b>Webmaster</b></h1> -->
-          <div class="row">
-            <div class="col-xs-3">
+            <div class="col-xs-2">
               <div class="thumbnail">
-                <img src="/static/img/zhaoyangzeng.jpg" width="100%" class="avatar">
+                <img src="/static/img/Shizhe_Chen.jpg" width="100%" class="avatar">
                 <div class="caption">
                   <center>
-                    <h4>Zhaoyang Zeng</h4>
-                    </h2>
-                    <p>
-                      <center>Sun Yat-sen University</center>
-                      <center>Microsoft Research Asia</center>
-                    </p>
-                    <p>
-                      <center><a href="mailto:zengzhy5@mail2.sysu.edu.cn">zengzhy5@mail2.sysu.edu.cn</a></center>
-                    </p>
+                    <h4 class="name">Shizhe Chen</h4>
+                  </center>
+                  <p>
+                    <center class="organization">INRIA</center><br>
+                  </p>
+                  <p>
+                    <center><a href="mailto:cshizhe@gmail.com">cshizhe@gmail.com</a></center>
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div class="col-xs-3">
+            <div class="col-xs-2">
               <div class="thumbnail">
-                <img src="/static/img/peiyeli.jpg" width="100%" class="avatar">
+                <img src="/static/img/Qin_Jin.jpg" width="100%" class="avatar">
                 <div class="caption">
                   <center>
-                    <h4>Peiye Liu</h4>
-                    </h2>
-                    <p>
-                      <center>Beijing University of Posts and Telecommunications</center>
-                    </p>
-                    <p>
-                      <center><a href="mailto:liupeiye@bupt.edu.cn">liupeiye@bupt.edu.cn</a></center>
-                    </p>
+                    <h4 class="name">Qin Jin</h4>
+                  </center>
+                  <p>
+                    <center class="organization">Renmin University of China</center><br>
+                  </p>
+                  <p>
+                    <center><a href="maito:qjin@ruc.edu.cn">qjin@ruc.edu.cn</a></center>
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-2">
+              <div class="thumbnail">
+                <img src="/static/img/Hauptmann_Alexander.jpg" width="100%" class="avatar">
+                <div class="caption">
+                  <center>
+                    <h4 class="name">Alexander Hauptmann</h4>
+                  </center>
+                  <p>
+                    <center class="organization">Carnegie Mellon University</center><br>
+                  </p>
+                  <p>
+                    <center><a href="maito:alex@cs.cmu.edu">alex@cs.cmu.edu</a></center>
+                  </p>
                 </div>
               </div>
             </div>
 
-            <div class="col-xs-3">
+            <div class="col-xs-2">
               <div class="thumbnail">
-                <img src="/static/img/jiawang.jpg" width="100%" class="avatar">
+                <img src="/static/img/Yong_Rui.jpg" width="100%" class="avatar">
                 <div class="caption">
                   <center>
-                    <h4>Jia Wang</h4>
-                    </h2>
-                    <p>
-                      <center>National Chiao Tung University</center>
-                    </p>
-                    <p>
-                      <center><a href="mailto:jiawang169@outlook.com">jiawang169@outlook.com</a></center>
-                    </p>
+                    <h4 class="name">Yong Rui</h4>
+                  </center>
+                  <p>
+                    <center class="organization">Lenovo Group</center><br>
+                  </p>
+                  <p>
+                    <center><a href="maito:yongrui@lenovo.com">yongrui@lenovo.com</a></center>
+                  </p>
                 </div>
               </div>
             </div>
-          </div>
+
+	  </div>
+
         </div>
       </div>
     </div>
 
-    <div class="row" id="block8">
+    <!--div class="row" id="block8">
       <div class="col-xs-10 col-xs-offset-1">
         <center>
-          <h5 style="color:white;">Copyright © 2020. SMP Challenge Organization Committee. All rights reserved.</h5>
+          <h5 style="color:white;">Copyright © 2021. Multi Organization Committee. All rights reserved.</h5>
         </center>
       </div>
-    </div>
+    </div-->
 
   </div>
 
