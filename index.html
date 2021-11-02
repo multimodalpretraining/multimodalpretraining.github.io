@@ -440,17 +440,17 @@ Submissions should be made through <a href="https://easychair.org/conferences/?c
                 
                 <div class="row">
                   <div class="col-xs-2">
-                    <img src="/static/img/Bei_Liu.jpg" width="100%">
+                    <img src="/static/img/ruihua_song.jpg" width="100%">
                   </div>
                   <div class="col-xs-10" style="margin-left: -10px">
-                    <h4>Song</h4>
-                    <p>Song is a researcher in xxxx University. His current research interest is Cross-modality Pre-training</p>
+                    <h4>Ruihua Song</h4>
+                    <p>Dr. Ruihua SONG is a tenured Associate Professor of Gaoling School of AI at Renmin University. She has been Lead Researcher of Microsoft Research Asia and Chief Scientist of Microsoft XiaoIce. On May, 2017, the first AI-authored poem collection was published. The book title is “The Sunshine Lost Windows”. She contributes the generation algorithm behind. She published more than 90 papers and hold 25 patents. She serves SIGIR, ACL, KDD, WWW, EMNLP, CIKM, etc. as Short Paper Chairs, Area Chair, Senior PC, or PC. Her recent research interests include multi-modal understanding of natural language, multi-modal dialogue systems and AI based creation.</p>
                   </div>
                 </div>
                   
 
-                <h5> This is a title</h5>
-                <p> This is a long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long abstract</p>
+                <h5> Title: WenLan: Efficient Large-Scale Multi-Modal Pre-Training on Real World Data</h5>
+                <p> Abstract: Multi-modal pre-training models have been intensively explored to bridge vision and language in recent years. However, most of them explicitly model the cross-modal interaction between image-text pairs, by assuming that there exists strong semantic correlation between the text and image modalities. Since this strong assumption is often invalid in real-world scenarios, we choose to implicitly model the cross-modal correlation for large-scale multi-modal pre-training, which is the focus of the Chinese project `WenLan' led by our team. Specifically, with the weak correlation assumption over image-text pairs, we propose a two-tower pre-training model called BriVL within the cross-modal contrastive learning framework. We construct a large Chinese multi-source dataset of 650 million image-text pairs for pre-training our model. Extensive experiments demonstrate that WenLan on various downstream tasks and easy to build efficient applications based on searching between images and texts.</p>
 
               </li>
         
@@ -468,15 +468,22 @@ Submissions should be made through <a href="https://easychair.org/conferences/?c
                 <span>10:35-11:10</span>
                 <div class="row">
                   <div class="col-xs-2">
-                    <img src="/static/img/Bei_Liu.jpg" width="100%">
+                    <img src="/static/img/limin_wang.jpg" width="100%">
                   </div>
                   <div class="col-xs-10" style="margin-left: -10px">
-                    <h4>Wang</h4>
-                    <p>Wong is a researcher in xxxx University. His current research interest is Cross-modality Pre-training</p>
+                    <h4>Limin Wang</h4>
+                    <p>Limin Wang received the B.Sc. degree from Nanjing University, Nanjing, China, in 2011, and the Ph.D. degree from the Chinese University of Hong Kong, Hong Kong, in 2015. From 2015 to 2018, he was a Post-Doctoral Researcher with the Computer Vision Laboratory, ETH Zurich. He is currently a Professor with the Department of Computer Science and Technology, Nanjing University. His research interests include computer vision and deep learning. He was the first runner-up at the ImageNet Large Scale Visual Recognition Challenge 2015 in scene recognition, and the winner at the ActivityNet Large Scale Activity Recognition Challenge 2016 in video classification. He has served as a Senior PC or Area Chair for AAAI 2021, IJCAI 2021. He is a member of the IEEE and ACM.</p>
                   </div>
                 </div>
-                <h5> This is a title</h5>
-                <p> This is a long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long long abstract</p>
+                <h5> Title: Cross-modal Pretraining and Matching for Video Understanding</h5>
+                <p> Abstract: Videos are generally accompanied with multi-modal information such as audio, text, and motion. The multi-modal information is becoming an important cue for understanding video content.  How to model the correlation between multi-modalities in videos is still an unsolved problem in video understanding tasks such as video action recognition, video temporal grounding, and video description.
+
+In this talk, we focus on two specific video understanding tasks (i.e., cross-modal self-supervised pretraining and temporal grounding) by exploiting the video-text cross modal information. In particular, we notice that videos are naturally accompanied by abundant text information such as YouTube titles, Instagram captions, and Movie scripts. This textual information could serve as a general information to guide us train a multi-modal network, which could be used as a general video representation to be fine-tuned on the downstream tasks, or as cross-modal matching similarity to be used for video segment retrieval.
+
+Specifically, we first present a general cross-modal pair discrimination (CPD) framework to capture this correlation between a video and its associated text. We train our CPD models on both standard video dataset (Kinetics-210k) and uncurated web video dataset (Instagram-300k) to demonstrate its effectiveness. Without further fine-tuning, the learnt models obtain competitive results for action classification on Kinetics under the linear classification protocol. Moreover, our visual model provides an effective initialization to fine-tune on downstream tasks, which yields a remarkable performance gain for action recognition on UCF101 and HMDB51. Our CPD demonstrates that pre-training on a relatively small dataset is able to yield a comparable performance to those methods of using order magnitude more data, which is meaningful and practicable for the scenarios with limited computational facilities.
+
+Second, we present a Contrastive and Compatible Matching Network (C2M-Net), to directly model the relations between language queries and video moments in a joint embedding space. This new metric-learning framework enables fully exploiting negative samples from two new aspects: constructing negative pairs from a dual matching scheme and mining negative pairs across different videos. These new negative samples could enhance the joint representation learning of two modalities via contrastive learning to maximize their mutual information. In addition, to precisely rank relatively positive pairs for accurate temporal grounding, we also learn the compatibility between queries and moments by directly regressing their IoU-based similarity. Our C2M-Net yields state-of-the-art performance on three benchmarks of CharadesSTA, TACoS, and ActivityNet-Captions.
+</p>
               </li>
 
               <li>
